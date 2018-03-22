@@ -54,7 +54,7 @@ if ($connection->affected_rows >=1) {
 		<item><?php 
 		$row['course_id'] = 'course_id';
 		?>
-			<a href="detail.php?course_id=$row['course_id']"><b><?php echo $row['course_title']; ?></b></a></br>
+			<?php echo '<a href="detail.php?course_id='.$course_id.'">' ?><b><?php echo $row['course_title']; ?></b></a></br>
 			<description> <?php echo $row['description']; ?></description></br>
 			<pubDate><?php echo date($row['timestamp']); ?> </pubDate>
 		</item>
